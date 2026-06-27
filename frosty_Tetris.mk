@@ -9,8 +9,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lunaris stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common Frosty stuff.
+$(call inherit-product, vendor/frosty/config/common_full_phone.mk)
 
 # Enable ADPF pipeline for UI performance
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -24,7 +24,7 @@ GPU_MIN_FREQ_PATH := /sys/devices/platform/13000000.mali/devfreq/min_freq
 # Inherit from Tetris device
 $(call inherit-product, device/nothing/Tetris/device.mk)
 
-PRODUCT_NAME := infinity_Tetris
+PRODUCT_NAME := frosty_Tetris
 PRODUCT_DEVICE := Tetris
 PRODUCT_BRAND := Nothing
 PRODUCT_MANUFACTURER := Nothing
@@ -39,8 +39,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Nothing/Tetris/Tetris:16/BP2A.250605.031.A3/2602251904:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
-# infinity
-INFINITY_MAINTAINER := Ashwani
+# Frosty
 TARGET_HAS_UDFPS := true
-WITH_GAPPS := true
-INFINITY_BUILD_TYPE := OFFICIAL
+WITH_GMS := true

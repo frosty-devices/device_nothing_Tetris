@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_Tetris.mk
+    $(LOCAL_DIR)/frosty_Tetris.mk
