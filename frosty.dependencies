@@ -5,7 +5,7 @@
   },
   {
     "repository": "frosty-devices/vendor_nothing_Tetris",
-    "target_path": "device/nothing/Tetris-kernel"
+    "target_path": "vendor/nothing/Tetris"
   },
   {
     "repository": "frosty-devices/hardware_mediatek",
